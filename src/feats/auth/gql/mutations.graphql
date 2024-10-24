@@ -1,0 +1,20 @@
+# mutation authentication($credentials: AuthInput!) {
+#   authentication(credentials: $credentials) {
+#     token
+#     user {
+#       id
+#       fullName
+#       email
+#     }
+#   }
+# }
+
+# mutation signup($signupInput: UserCreateInput!) {
+#   signup(signupInput: $signupInput) {
+#     token
+#     user {
+#       fullName
+#       email
+#     }
+#   }
+# }
