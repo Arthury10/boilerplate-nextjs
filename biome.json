@@ -1,6 +1,6 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "extends": ["next/core-web-vitals", "next/typescript"],
+  "extends": [],
   "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
   "files": { "ignoreUnknown": false, "ignore": [] },
   "formatter": { "enabled": true, "indentStyle": "tab" },
@@ -12,7 +12,8 @@
       "complexity": { "noUselessTypeConstraint": "error" },
       "correctness": {
         "noUnusedVariables": "error",
-        "useArrayLiterals": "off"
+        "useArrayLiterals": "off",
+        "noUnusedImports": "error"
       },
       "style": { "noNamespace": "error", "useAsConstAssertion": "error" },
       "suspicious": {
