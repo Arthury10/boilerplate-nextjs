@@ -1,6 +1,6 @@
 import { getSdk, Query } from "@/generated";
 import { GraphQLClient } from "graphql-request";
-import { auth } from "@/auth";
+import { auth } from "@/libs/auth/next-auth";
 import { revalidateTag } from "next/cache";
 
 type NextConfigType = NextFetchRequestConfig | undefined;

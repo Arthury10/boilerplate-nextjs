@@ -1,12 +1,8 @@
-import { NextResponse } from "next/server";
+import NextAuth from "next-auth";
+import nextAuthEdgeConfig from "./libs/auth/next-auth-for-edge";
 
-export default async function middleware() {
-  return NextResponse.next();
-}
+export default NextAuth(nextAuthEdgeConfig).auth;
 
 export const config = {
-  matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico).*)",
-    "/(auth)/:path*",
-  ],
+  matcher: ["/((?!api|_next/static|_next/image|_next/data|favicon.ico).*)"],
 };
